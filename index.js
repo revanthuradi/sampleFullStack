@@ -22,9 +22,7 @@ connectDB().then(() => {
   app.use("*", (req, res) => {
     res.sendFile(__dirname + "/dist/index.html");
   });
-
   app.listen(process.env.PORT, () => {
     console.log(`server listening at http://localhost:${process.env.PORT}`);
   });
 });
-
