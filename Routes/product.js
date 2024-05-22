@@ -8,26 +8,28 @@ import {
 } from "../controllers/products.js";
 
 import express from "express";
+export const productRouter = express.Router();
 
-export const router = express.Router();
+
 // C R U D  API
 
 // CREATE
 
-router.post("/products", createProduct);
+productRouter.post("/products", createProduct);
 
 // READ
 
-router.get("/products", getProducts);
+productRouter.get("/products", getProducts);
 
-router.get("/products/:id", getProduct);
+productRouter.get("/products/:id", getProduct);
 
 // UPDATE
 
-router.put("/products/:id", replaceProduct);
+productRouter.put("/products/:id", replaceProduct);
 
-router.patch("/products/:id", updateProduct);
+productRouter.patch("/products/:id", updateProduct);
 
 // DELETE
 
-router.delete("/products/:id", deleteProduct);
+productRouter.delete("/products/:id", deleteProduct);
+

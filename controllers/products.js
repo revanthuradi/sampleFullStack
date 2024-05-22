@@ -1,7 +1,3 @@
-// import fs from "fs";
-// const data = JSON.parse(fs.readFileSync("./data.json", "utf-8"));
-// const productsData = data.products;
-
 import { Product } from "../models/product.js";
 
 export const createProduct = (req, res) => {
